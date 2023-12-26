@@ -35,7 +35,7 @@ def filetest(request):
 
     elif str(request.FILES['docfile']).endswith(".pdf"):
         # creating a pdf file object 
-        pdfFileObj = open(request.FILES['docfile'], 'rb') 
+        pdfFileObj = open(request.FILES['docfile'], 'rb')
 
         # creating a pdf reader object 
         pdfReader = PyPDF2.PdfFileReader(pdfFileObj) 
